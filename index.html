@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta author="Razvalnuy">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<title>chatApp</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<template id="templateMessage">
+		<section class="box-message">
+			<div class="message-i">
+				<p>
+					<span id="me">Вы:</span> <span id="message"></span>
+				</p>
+				<p class="time-message">
+					00:00
+				</p>
+			</div>
+		</section>
+	</template>
+	<main>
+		<section class="main-container">
+			<div class="pannel-btn">
+				<button class="btn" id="settigns-chat"> Настройки</button>
+				<button class="btn btn-exit" id="login">Выйти</button>
+			</div>
+			<div class="main-message" id="message-container">
+			</div>
+			<div class="send-message">
+				<form id="sends">
+					<input class="input-message" type="text" placeholder="сообщение..">
+					<button class="btn btn-send">▷</button>
+				</form>
+			</div>
+		</section>
+
+		<dialog class="main-container-popup" id="avtorizationDialog">
+			<div class="main-container-popup2">
+				<div class="popup-head">
+					<p>Авторизация</p>
+					<div class="radio-btn">
+						<!-- <button class="btn-close" id="close-autorization">x</button> -->
+					</div>
+				</div>
+				<div class="popup-autorization-input">
+					<form id="wrap-getCode">
+						<label> Почта:
+							<input class="input-mail-code" type="email" name="email">
+						</label>
+						<div class="btn-autorization-group">
+							<button class="btn btn-autorization" id="get-code">Получить код</button>
+							<button class="btn btn-autorization" id="code-btn">Ввести код</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</dialog>
+
+		<dialog class="main-container-popup" id="getCodeDialog">
+			<div class="main-container-popup2">
+				<div class="popup-head">
+					<p>Подтверждение</p>
+					<div class="radio-btn">
+						<button class="btn-close" id="close-get-code">Х</button>
+					</div>
+				</div>
+				<div class="popup-autorization-input">
+					<form id="wrapGiveCode">
+						<label for=""> Код:
+							<input class="input-mail-code" type="text" id="give-code">
+						</label>
+						<div class="btn-autorization-group">
+							<button class="btn btn-code">Войти</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</dialog>
+		<dialog class="main-container-popup" id="settignsChatDialog">
+			<div class="main-container-popup2">
+				<div class="popup-head">
+					<p>Настройки</p>
+					<div class="radio-btn">
+						<button type="button" class="btn-close">x</button>
+					</div>
+				</div>
+				<div class="popup-autorization-input">
+					<div>
+						<form id="wrapSettingName">
+							<label for=""> Имя в чате:
+								<input class="input-name" type="text" name="text">
+								<button class="btn btn-send btn-send-code">▶</button>
+							</label>
+						</form>
+					</div>
+				</div>
+			</div>
+		</dialog>
+	</main>
+	<script type="module" src="js/send.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+	background-color: rgb(24, 26, 27); /* Легкий серый цвет */
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+#me {
+	font-weight: bold;
+	color: #21fc04; /* Цвет текста - черный */
+}
+
+#message {
+	color: #ffffff;
+}
+
+.time-message {
+	color: #f1f1f1;
+}
+.main-container {
+	border: 4px solid rgb(150, 148, 148);
+	width: 320px;
+	height: 533px;
+	padding: 8px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 20px;
+}
+
+.pannel-btn {
+	width: 100%;
+	height: 39px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+}
+
+.lastHistory {
+	color: white;
+	font-weight: 900;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+}
+
+.btn {
+	border: 1px solid #5d6568;
+	width: 98px;
+	height: 32px;
+	text-align: center;
+	background-color: #181a1b;
+	font-size: 14px;
+	border-radius: 10px;
+	color: #ffffff;
+}
+.btn-exit {
+	width: 66px;
+}
+
+.btn:hover {
+	color: #fff;
+	background-color: #000000;
+}
+
+.btn-send {
+	height: 28px;
+	width: 29px;
+	border-radius: 12px;
+}
+
+.btn-autorization {
+	width: 120px;
+}
+
+.btn-code {
+	width: 62px;
+}
+#message-container {
+	background-color: #161c6b;
+	border: 2px solid #4d4d4d;
+	background-position: center;
+	background-size: cover;
+}
+.main-message {
+	width: 100%;
+	height: 437px;
+	border: 1px solid black;
+	position: relative;
+	overflow-y: auto;
+}
+
+.icon-del-task {
+	transform: rotate(-45deg);
+}
+
+.main-message p {
+	margin: 4px;
+	font-size: 16px;
+}
+.time-message {
+	color: rgb(253, 253, 253);
+	text-align: right;
+}
+
+.message-i {
+	margin: 8px;
+	padding: 4px;
+	display: inline-block;
+	float: right;
+	max-width: 257px;
+	background-color: rgba(174, 182, 187, 0.486);
+	color: #fff; /* Цвет текста - белый */
+}
+
+.message-me {
+	float: left;
+	background-color: rgba(76, 80, 82, 75%);
+}
+
+.box-message {
+	width: 273px;
+	min-height: 75px;
+	overflow: hidden;
+	word-wrap: break-word;
+}
+
+.backgr-message-noread {
+	background-color: rgb(202, 211, 255, 0.2);
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgb(238, 241, 238);
+	border-radius: 50px;
+}
+
+/* Стили для трека скроллбара */
+::-webkit-scrollbar-track {
+	background-color: #333333;
+	border-radius: 50px;
+}
+
+.input-message {
+	margin-top: 5px;
+	height: 30px;
+	width: 260px;
+	border-radius: 10px;
+	background-color: rgb(59, 59, 59);
+	color: #fff;
+	font-size: 16px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+}
+
+.main-container-popup {
+	border: 1px solid rgb(255, 255, 255);
+	width: 320px;
+	height: 532px;
+	background-color: rgba(0, 0, 0, 20%);
+	position: absolute;
+	padding: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 17px;
+}
+
+.main-container-popup2 {
+	width: 273px;
+	height: 273px;
+	margin-top: 106px;
+	margin-left: 22px;
+	padding: 14px;
+	background: #0f080f;
+	color: #f1f1f1;
+	border-radius: 20px;
+}
+
+.popup-head p {
+	margin-top: 10px;
+}
+
+.radio-btn {
+	display: flex;
+	align-items: center;
+}
+
+.btn-close {
+	width: 22px;
+	height: 22px;
+	border: none;
+	background: rgba(255, 255, 255, 0);
+	cursor: pointer;
+}
+
+.btn-close:hover {
+	transform: scale(1.1);
+}
+.btn-close:active {
+	transform: scale(0.9);
+}
+
+.popup-head {
+	display: flex;
+	justify-content: space-between;
+}
+
+.popup-autorization-input {
+	margin-top: 60px;
+}
+
+.input-mail-code {
+	width: 245px;
+	height: 32px;
+	background-color: rgb(59, 59, 59);
+	color: #f7f7f7;
+	font-size: 16px;
+}
+
+.input-name {
+	color: #f7f7f7;
+	font-weight: 900;
+	width: 207px;
+	height: 32px;
+	background-color: rgb(59, 59, 59);
+}
+
+.btn-autorization-group {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 7px;
+}
+/*  */
